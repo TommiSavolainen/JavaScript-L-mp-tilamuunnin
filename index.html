@@ -10,19 +10,25 @@
     <div>
         <form>
             <select name="valinta" id="valinta">
-                <option value="c_to_f">Celcius -> Fahrenheit</option>
-                <option value="f_to_c">Fahrenheit -> Celcius</option>
+                <option value="c_to_f" id="C_TO_F">Celcius -> Fahrenheit</option>
+                <option value="f_to_c" id="C_TO_F">Fahrenheit -> Celcius</option>
             </select><br>
-            <label for="suota">Syötä lämpötila:</label><br>
+            <label for="syota">Syötä lämpötila:</label><br>
             <input type="text" name="lampotila" id="syota">
             <button id="btn">Muunna</button><br>
-            <input type="radio" name="1_des" id="1_desimaali">
+            <input type="radio" name="des" id="1_desimaali">
             <label for="1_desimaali">1 desimaali</label><br>
-            <input type="radio" name="2_des" id="2_desimaali">
+            <input type="radio" name="des" id="2_desimaali">
             <label for="2_desimaali">2 desimaali</label><br>
-            <input type="radio" name="2_des" id="2_desimaali">
-            <label for="2_desimaali">2 desimaali</label><br>
+            <input type="radio" name="des" id="3_desimaali">
+            <label for="3_desimaali">3 desimaali</label><br>
         </form>
     </div>
+    <div>
+        <p>Vastaus:</p>
+        <p id="vastaus"></p>
+        <p id="nolla"></p>
+    </div>
+    <script src="main.js"></script>
 </body>
 </html>
